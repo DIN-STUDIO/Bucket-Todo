@@ -25,4 +25,7 @@ extension UIColor {
     
     // Font Color
     static let mediumGray = UIColor(hexCode: "8E8E8E")
+    
+    // TextField Color
+    static let lightGrey = UIColor(hexCode: "F6F6F6")
 }

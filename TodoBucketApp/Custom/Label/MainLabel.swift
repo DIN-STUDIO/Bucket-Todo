@@ -4,9 +4,7 @@ import SnapKit
 class MainLabel: UILabel {
     init(text: String) {
         super.init(frame: .zero)
-        
-        print(type(of: text))
-        
+
         self.text = text
         self.textColor = .black
         self.textAlignment = .center

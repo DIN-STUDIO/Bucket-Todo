@@ -8,7 +8,7 @@ class SubLabel: UILabel {
         self.text = text
         self.textColor = .mediumGray
         self.textAlignment = .center
-        self.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+        self.font = UIFont.systemFont(ofSize: 16, weight: .regular)
     }
     
     required init?(coder: NSCoder) {

@@ -7,12 +7,7 @@ final class PaleOrangeBtn: UIButton {
     init(title: String) {
         super.init(frame: .zero)
         
-        setTitle(title, for: .normal)
-        setTitleColor(.brightOrange, for: .normal)
-        layer.cornerRadius = 15
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .medium)
-        self.backgroundColor = .paleOrange
-        self.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        setUpUI(title: title)
         setConstraints()
     }
     
@@ -22,6 +17,16 @@ final class PaleOrangeBtn: UIButton {
     
     @objc func buttonTapped() {
         nextPage?()
+    }
+    
+    private func setUpUI(title: String) {
+        setTitle(title, for: .normal)
+        setTitleColor(.brightOrange, for: .normal)
+        layer.cornerRadius = 15
+        
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 19, weight: .medium)
+        self.backgroundColor = .paleOrange
+        self.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
     private func setConstraints() {
